@@ -1,0 +1,84 @@
+/*==== rtl css ====*/
+
+
+
+.buysmart-traffic-area.buysmart-traffic-area-rtl .traffic-thumb {
+	left: 0;
+	right: auto;
+	transform: translateY(-50%) rotateY(-180deg);
+}
+
+
+.buysmart-traffic-area-rtl .buysmart-traffic-title{
+	padding-left: 220px;
+	padding-right: 0;
+}
+
+
+.buysmart-traffic-area-rtl .buysmart-traffic-service .icon{
+	right: 0;
+	left: auto;
+}
+
+
+
+.buysmart-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::after,
+.buysmart-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::before{
+	right: auto;
+	left: 30px;
+}
+
+
+.buysmart-project-area.buysmart-project-area-rtl .buysmart-project-box .buysmart-project-thumb{
+	left: 70px;
+	right: auto;
+}
+
+
+
+.buysmart-project-area-rtl .buysmart-project-content .input-box input{
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+
+.buysmart-project-area-rtl .buysmart-project-content .input-box button{
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+
+
+
+.buysmart-header-area-rtl .buysmart-header-main-menu ul{
+	text-align: right;
+}
+
+
+
+
+
+.buysmart-header-area-rtl .buysmart-header-main-menu ul > li .sub-menu{
+	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

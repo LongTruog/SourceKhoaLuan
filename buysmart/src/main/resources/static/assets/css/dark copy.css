@@ -1,0 +1,230 @@
+/*dark css*/
+
+
+.buysmart-dark{
+	background: #292E3C;
+}
+
+.buysmart-header-area-dark .buysmart-header-main-menu ul > li > a{
+	color: #fff;
+}
+.buysmart-header-area-dark .header-nav-box .buysmart-btn-box .login-btn{
+	color: #fff;
+}
+
+
+
+.buysmart-hero-area-dark .buysmart-hero-content .buysmart-title{
+	color: #fff;
+}
+
+.buysmart-hero-area-dark .buysmart-hero-content p{
+	color: #fff;
+}
+
+.buysmart-hero-area-dark .buysmart-hero-content ul li a{
+	background: #fff;
+	border-color: #fff;
+	color: #0e1133;
+}
+
+.buysmart-hero-area-dark .buysmart-hero-content ul li a:hover{
+	background: transparent;
+	color: #fff;
+}
+
+.buysmart-hero-area-dark .buysmart-hero-content ul li a.item-2{
+	color: #fff;
+}
+.buysmart-hero-area-dark .buysmart-hero-content ul li a.item-2:hover{
+	background: #fff;
+	color: #0e1133;
+}
+
+.buysmart-service-area.buysmart-service-area-dark{
+	background: #1f2128;
+}
+
+.buysmart-service-area-dark .buysmart-section-title .buysmart-title{
+	color: #fff;
+}
+.buysmart-service-area-dark .buysmart-section-title p{
+	color: #fff;
+}
+
+.buysmart-service-area-dark  .buysmart-single-service{
+	background: #292E3C;
+}
+
+.buysmart-service-area-dark .buysmart-single-service p,
+.buysmart-service-area-dark .buysmart-single-service .buysmart-title{
+	color: #fff;
+}
+
+.buysmart-features-area-dark  .buysmart-features-tabs-btn .nav a{
+	color: #fff;
+}
+
+.buysmart-features-area-dark .buysmart-features-content p,
+.buysmart-features-area-dark .buysmart-features-content .title{
+	color: #fff;
+}
+
+.buysmart-traffic-area-dark .buysmart-traffic-title p,
+.buysmart-traffic-area-dark .buysmart-traffic-title .title{
+	color: #fff;
+}
+
+.buysmart-traffic-area-dark .buysmart-traffic-service p,
+.buysmart-traffic-area-dark .buysmart-traffic-service .title{
+	color: #fff;
+}
+
+.buysmart-traffic-area-dark .traffic-btn a.main-btn{
+	color: #fff;
+}
+.buysmart-traffic-area-dark .traffic-btn a.main-btn:hover{
+	background: #fff;
+	color: #2b70fa;
+}
+
+.buysmart-team-area-dark .buysmart-section-title p,
+.buysmart-team-area-dark .buysmart-section-title .buysmart-title{
+	color: #fff;
+}
+
+.buysmart-team-area-dark .buysmart-team-item .content span,
+.buysmart-team-area-dark .buysmart-team-item .content .title{
+	color: #fff;
+}
+
+.buysmart-team-area-dark .team-btn a{
+	color: #fff;
+}
+
+
+
+.buysmart-faq-area-dark.buysmart-faq-area,
+.buysmart-pricing-area-dark.buysmart-pricing-area{
+	background: #1f2128;
+}
+
+.buysmart-pricing-area-dark .buysmart-section-title p,
+.buysmart-pricing-area-dark .buysmart-section-title .buysmart-title{
+	color: #fff;
+}
+
+
+
+.buysmart-pricing-area-dark.buysmart-pricing-area ul.switch-toggler-list li a{
+	color: #fff;
+	opacity: 0.1;
+}
+.buysmart-pricing-area-dark.buysmart-pricing-area ul.switch-toggler-list li.active a{
+	color: #fff;
+	opacity: 1;
+}
+
+
+.buysmart-pricing-area-dark.buysmart-pricing-area .pricing-one__single{
+	background: #292E3C;
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark .pricing-one__single .pricig-heading h6{
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark .pricing-one__single .pricig-heading .price-range{
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark .pricing-one__single .pricig-heading .price-range p{
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark .pricing-one__single .pricig-heading > p{
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark .pricing-one__single .pricig-body ul li{
+	color: #fff;
+}
+
+.buysmart-pricing-area-dark  .pricing-one__single .pricig-body .pricing-btn a{
+	color: #fff;
+}
+
+
+
+
+.buysmart-faq-area.buysmart-faq-area-dark .buysmart-section-title p,
+.buysmart-faq-area.buysmart-faq-area-dark .buysmart-section-title .buysmart-title{
+	color: #fff;
+}
+
+
+.buysmart-faq-area.buysmart-faq-area-dark .faq-accrodion .accrodion{
+	background: #292E3C;
+	
+}
+.buysmart-faq-area.buysmart-faq-area-dark .faq-accrodion .accrodion .accrodion-inner,
+.buysmart-faq-area.buysmart-faq-area-dark .faq-accrodion .accrodion.active .accrodion-inner{
+	border-color: #292E3C;
+	background: #292E3C;
+}
+
+.buysmart-faq-area.buysmart-faq-area-dark .faq-accrodion .accrodion .accrodion-content p,
+.buysmart-faq-area.buysmart-faq-area-dark .faq-accrodion .accrodion .accrodion-title h4{
+	color: #fff;
+}
+
+.buysmart-blog-area-dark .buysmart-section-title p,
+.buysmart-blog-area-dark .buysmart-section-title .buysmart-title{
+	color: #fff;
+}
+.buysmart-blog-area-dark .buysmart-blog-item .content > a,
+.buysmart-blog-area-dark .buysmart-blog-item .content .title a,
+.buysmart-blog-area-dark .buysmart-blog-item .content .blog-meta ul li a,
+.buysmart-blog-area-dark .buysmart-blog-item .content .blog-meta ul li{
+	color: #fff;
+}
+
+.buysmart-blog-area-dark .buysmart-blog-item .content > a:hover,
+.buysmart-blog-area-dark .buysmart-blog-item .content .title a:hover{
+	color: #2b70fa;
+}
+
+
+.buysmart-footer-area-dark.buysmart-footer-area{
+	background: #1f2128;
+}
+
+.buysmart-footer-area-dark .footer-about-widget a,
+.buysmart-footer-area-dark .footer-about-widget p{
+	color: #fff;
+}
+.buysmart-footer-area-dark .footer-about-widget a:hover{
+	color: #2b70fa;
+}
+
+.buysmart-footer-area-dark .footer-widget-info ul li a,
+.buysmart-footer-area-dark .footer-widget-info .title,
+.buysmart-footer-area-dark .footer-navigation ul li a,
+.buysmart-footer-area-dark .footer-navigation .title{
+	color: #fff;
+}
+.buysmart-footer-area-dark .footer-navigation ul li a:hover{
+	color: #2b70fa;
+}
+
+.buysmart-footer-area-dark .footer-copyright .copyright-text p{
+	color: #fff;
+}
+
+.buysmart-footer-area-dark  .footer-copyright .apps-download-btn ul li a:hover{
+	color: #fff;
+}
+.buysmart-footer-area-dark  .footer-copyright .apps-download-btn ul li a.item-2{
+	color: #fff;
+}

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace = "~{header :: html_header}">
+<body>
+
+    <header th:replace="header :: my-header"></header>
+
+    <div class="banner-top pt-5">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style=" transform: scale(0.9);">
+                    <img class="d-block w-100 h-10" src="./image/dealhe.jpg" alt="First slide" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" transform: scale(0.9);">
+                    <img class="d-block w-100 h-10" src="./image/banner-index1.png.webp" alt="Third slide" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" transform: scale(0.9);">
+                    <img class="d-block w-100 h-10" src="./image/banner-index2.jpg_.webp" alt="Second slide" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style=" transform: scale(0.9);">
+                    <img class="d-block w-100 h-10" src="./image/salekichsan.jpg_.webp" alt="Second slide" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="row">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="pt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-3  ">
+                    <div class="banner-block banner-hover">
+
+                        <img class=" lazyloaded" src="./image/banner1.jpg_.webp">
+
+                        <div class="banner-content text-left">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-3  ">
+                    <div class="banner-block banner-hover">
+                        <a href="#">
+                            <img class=" lazyloaded" src="./image/banner2.png.webp">
+                        </a>
+                        <div class="banner-content text-left">
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-3 category">
+        <div class="container">
+            <div class="title text-center   ">
+                <h2>Danh mục sản phẩm</h2>
+            </div>
+
+            <div class="row">
+                <div class="cate-slider">
+                    <div class="img-cate"><img src="./image/danhmuc-index1.jpg.webp" alt=""></div>
+                    <div class="img-cate"><img src="./image/danhmuc-index2.jpg_.webp" alt=""></div>
+                    <div class="img-cate"><img src="./image/danhmuc-index3.jpg.webp" alt=""></div>
+                    <div class="img-cate"><img src="./image/danhmuc-index4.png.webp" alt=""></div>
+                    <div class="img-cate"><img src="./image/danhmuc-index5.jpg.webp" alt=""></div>
+                    <div class="img-cate"><img src="./image/danhmuc-index6.jpg.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 product">
+        <div class="container">
+            <div class="title text-center pb-10  ">
+                <h2>Sản phẩm nổi bật</h2>
+            </div>
+
+            <div class="row">
+                <div class="product-slider" >
+                    <div class="col-md-2" th:each="product : ${listHotProduct}">
+                        <a th:href="@{'/product/' + ${product.getId()}}">
+                            <div class="card">
+                                <img class="card-img-top" th:src="${saleProduct.image}" alt="Card image cap">
+                                <div class="card-body" style="height: 130px !important;">
+                                    <h5 class="card-title" th:text="${product.getName()}"></h5>
+                                    <h6 th:text="${product.getBriefDesc()}"></h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <button type="button" class="btn btn-warning" style="margin: 0 auto; display: flex;background-color:transparent ;
+          "><a th:href="@{'/category/1'}" style="text-decoration: none; color:#f5ab1e;">MUA NGAY</a></button>
+    </section>
+    <div class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage pt-3 pb-3">
+                        <h2>Khuyến mãi trong tuần</h2>
+                        <span>Ưu đãi sốc !!! </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3" th:each="saleProduct : ${listSaleProduct}">
+                    <div class="pro-loop">
+                        <div class="product-block product-resize">
+                            <div class="product-img">
+                                <div class="product-sale">
+                                    <span th:text="'-' + *{saleProduct.getPercentDiscount()} + '%'" ></span>
+                                </div>
+                                <a th:href="@{'/product/' + *{saleProduct.getId()}}">
+                                    <div class="fader">
+                                        <img class=" card-img-top" th:src="${saleProduct.image}" alt="">
+                                        <img class="w-100 card-img-top" th:src="${saleProduct.image}" alt="" style="display: none;">
+                                    </div>
+                                </a>
+                                <div class="box-pro-detail">
+                                    <h3 class="pro-name">
+                                        <a th:href="@{'/product/' + *{saleProduct.getId()}}"></a>
+                                        <a th:href="@{'/product/' + *{saleProduct.getId()}}" th:text="*{saleProduct.getName()}"></a>
+                                    </h3>
+                                    <div class="box-pro-prices">
+                                        <th:block th:if="${saleProduct.percentDiscount!=0}">
+                                            <p class="pro-price highlight">
+                                                <th:block th:with="discountPrice=${(saleProduct.salePrice * (100 - saleProduct.percentDiscount))/100}">
+                                                    <span th:text="${format.formatPrice(discountPrice)}"></span><sup>đ</sup>
+                                                </th:block>
+                                                <span class="pro-price-del">
+                                                    <del class="compare-price" th:text="${format.formatPrice(saleProduct.salePrice)}+'đ'"></del>
+                                                </span>
+                                            </p>
+                                        </th:block>
+                                        <th:block th:unless="${saleProduct.percentDiscount!=0}">
+                                            <p class="pro-price highlight">
+                                                <span th:text="${format.formatPrice(saleProduct.salePrice)}"></span><sup>đ</sup>
+                                            </p>
+                                        </th:block>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-2 mb-3">
+        <div class="container">
+            <div class="ftlink-li footer-newsletter">
+                <div class="news-letter">
+                    <div class="title">
+
+                        <h2 class="ft-title">Cơ Hội Săn Mã Giảm Giá Cuối Cùng !!!</h2>
+
+
+                        <p class="pb-2">NHẬN NGAY GIẢM GIÁ 20% CHO LẦN MUA HÀNG ĐẦU TIÊN TẠI BUYSMART!!</p>
+
+                    </div>
+                    <div class="subscribe-content">
+                        <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form-coupon"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <div class="subscribe-block ">
+                                <input type="email" name="contact[email]" class="email form-control mail text-medium" id="E-mail" value="" placeholder="Enter Your Email Address" autocapitalize="off">
+                                <button type="submit" class="btn-style1" name="commit" id="Subscribe"><a href="./createAccount" style="text-decoration: none; color: #fff;">Đăng Ký</a></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="amm-shopping-cart-wrapper" th:fragment="my-cart">
+        <div class="amm-shopping-cart-canvas" id="amm-shopping-cart-canvas">
+            <div class="amm-shopping_cart">
+                <div class="amm-shopping_cart-top-bar d-flex justify-content-between">
+                    <h6>Giỏ hàng</h6>
+                    <button class="amm-shopping-cart-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div><!-- shopping cart top bar -->
+                <div class="amm-shopping_cart-list-items mt-30" id="showCart">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="amm-shopping_cart-btn">
+                    <div class="total pt-35 d-flex justify-content-between">
+                        <h5>Tổng tiền:</h5>
+                        <p><span>0 <sup>đ</sup></span></p>
+
+                    </div>
+                    <div class="cart-btn pt-25">
+                        <a class="main-btn"  href="./ViewCart.html">Xem giỏ hàng</a>
+                        <a class="main-btn main-btn-2" href="./payment.html">Thanh toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+
+    <footer th:replace = "~{footer :: html_footer}"> </footer>
+</body>
+
+    <th:block th:insert="~{header :: script}"></th:block>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.cate-slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+            ]
+
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.product-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+            ]
+        });
+    });
+</script>
+<script>
+    $('.fader').hover(function() {
+        $(this).find("img:last").fadeToggle();
+    });
+
+</script>
+<script type='text/javascript'>
+
+</script>
+<script type='text/javascript'>
+
+</script>
+
+
+</html>
+
+
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace = "~{header :: html_header}">
+<body>
+
+    <header th:replace="header :: my-header"></header>
+
+    <div th:replace="index :: my-cart"></div>
+
+
+    <footer th:replace = "~{footer :: html_footer}"> </footer>
+</body>
+
+    <th:block th:insert="~{header :: script}"></th:block>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace = "~{header :: html_header}">
+
+<body>
+
+    <header th:replace="header :: my-header"></header>
+
+    <div th:replace="index :: my-cart"></div>
+
+    <section class="breadcrum" >
+    
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb container">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+    </section>
+    
+<main role="main">
+    <setion class="main-contact ">
+        <div class="container">
+            <div class="row contact-cover">
+                <div class="col-lg-5 col-sm-12 form-contact1">
+                    <h2 class="text-center">Liên hệ</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Họ Tên</label>
+                            <input  required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Họ Tên">
+                           
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email </label>
+                          <input  required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập email">
+                         
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Điện Thoại </label>
+                          <input required type="text" class="form-control" id="exampleInputPassword1" placeholder="Điện Thoại">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Địa Chỉ </label>
+                            <input required type="text" class="form-control" id="exampleInputPassword1" placeholder="Địa Chỉ">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Nội dung</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                       
+                        <button type="submit" class="btn btn-block btn-warning">Gửi Liên Hệ</button>
+                      </form>
+                </div>
+                <div class="col-lg-6 col-sm-12 form-contact2 ">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.633324676264!2d106.69105831480064!3d10.76271679233083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f16ad86371b%3A0x949d258c9508b1f2!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBWxINuIExhbmcgLSBDxqEgc-G7nyAx!5e0!3m2!1svi!2s!4v1650826268778!5m2!1svi!2s"  width="540" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </p>
+                    <h3>ĐỊA CHỈ BUYSMART</h3>
+                    <p><strong>Địa chỉ:</strong> 45 Nguyễn Khắc Nhu, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh 700000</p>
+
+                        <p><strong>Điện thoại:</strong> 0396367271</p>
+                </div>
+            </div>
+        </div>
+        
+    </setion>
+</main>
+
+    <footer th:replace = "~{footer :: html_footer}"> </footer>
+</body>
+
+    <th:block th:insert="~{header :: script}"></th:block>
+</html>
